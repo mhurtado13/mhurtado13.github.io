@@ -6,12 +6,12 @@ import { Package, ExternalLink, Download, Github } from "lucide-react";
 const Softwares = () => {
   const softwares = [
     {
-      title: "ImmunoSeq-ML",
-      description: "Python package for machine learning analysis of immune repertoire sequencing data. Includes preprocessing, feature extraction, and deep learning models for TCR/BCR analysis.",
-      version: "v2.1.0",
+      title: "multideconv",
+      description: "Integrative pipeline for cell type deconvolution from bulk RNAseq using first and second generation methods",
+      version: "v0.0.1",
       downloads: "10K+",
-      tags: ["Python", "PyPI", "Machine Learning"],
-      github: "#",
+      tags: ["R", "Rstudio", "Cell type deconvolution"],
+      github: "https://verapancaldilab.github.io/multideconv/",
       docs: "#",
       pypi: "#"
     },
