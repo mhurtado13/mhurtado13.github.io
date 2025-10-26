@@ -64,15 +64,16 @@ const About = () => {
             <h3 className="text-2xl font-bold text-foreground mb-6">About My Research</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                My research sits at the intersection of computational biology, immunology, and data science. 
-                I develop and apply cutting-edge computational methods to understand the complexity of the immune system, 
-                with a particular focus on adaptive immunity and immune repertoire analysis.
+                I'm a PhD student in Computational Biology at Université Paul Sabatier Toulouse III, working at the 
+                Cancer Research Center of Toulouse (CRCT) in Vera Pancaldi's lab. My research capitalizes on recent 
+                advances in modeling intercellular and intracellular processes in complex tumor environments, where 
+                effective control is key to improved cancer therapy effectiveness.
               </p>
               <p>
-                By integrating machine learning with high-throughput sequencing data, I aim to uncover novel 
-                immunological insights that can inform therapeutic development and precision medicine approaches. 
-                My work spans from algorithm development to biological discovery, always driven by the goal of 
-                translating computational findings into actionable biological knowledge.
+                Trained in Bioengineering at Universidad de Ingeniería y Tecnología UTEC (Lima, Peru) with a focus 
+                on Bioinformatics and Synthetic Biology, I now develop models for cancer and its interactions with 
+                the immune system using multi-omics data. My project aims to design effective control mechanisms for 
+                tumor environments, leveraging deep reinforcement learning and novel models of cellular interactions.
               </p>
             </div>
           </Card>

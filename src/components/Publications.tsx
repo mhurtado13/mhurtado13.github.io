@@ -6,31 +6,31 @@ import { FileText, ExternalLink } from "lucide-react";
 const Publications = () => {
   const publications = [
     {
-      title: "Deep Learning Approaches for T Cell Receptor Repertoire Analysis",
-      authors: "Your Name, et al.",
-      journal: "Nature Computational Science",
+      title: "multideconv - Integrative pipeline for cell type deconvolution from bulk RNAseq using first and second generation methods",
+      authors: "Marcelo Hurtado, Abdelmounim Essabbar, Leila Khajavi, Vera Pancaldi",
+      journal: "bioRxiv (Preprint)",
+      year: "2025",
+      description: "A novel computational pipeline addressing the high feature complexity and variability in cell type deconvolution methods, improving patient stratification from bulk RNA-seq data.",
+      tags: ["RNA-seq", "Deconvolution", "Computational Biology", "Machine Learning"],
+      link: "https://doi.org/10.1101/2025.04.29.651220"
+    },
+    {
+      title: "Time-series RNA-Seq and data-driven network inference unveil dynamics of cell activation, survival and crosstalk in Chronic Lymphocytic Leukaemia in vitro models",
+      authors: "Malvina Marku, Hugo Chenel, Julie Bordenave, Marcelo Hurtado, Marcin Domagala, Flavien Raynal, Mary Poupot, Loïc Ysebaert, Andrei Zinovyev, Vera Pancaldi",
+      journal: "bioRxiv (Preprint)",
+      year: "2025",
+      description: "In-depth analysis revealing dynamic regulatory changes within cancer cells in response to immune cell interactions, uncovering key regulators in Chronic Lymphocytic Leukaemia.",
+      tags: ["RNA-seq", "Network Inference", "Cancer", "Immunology"],
+      link: "https://doi.org/10.1101/2025.04.20.649300"
+    },
+    {
+      title: "Transcriptomics profiling of the non-small cell lung cancer microenvironment across disease stages reveals dual immune cell-type behaviors",
+      authors: "Marcelo Hurtado, Leila Khajavi, Abdelmounim Essabbar, et al., Vera Pancaldi",
+      journal: "Frontiers in Immunology",
       year: "2024",
-      description: "Novel deep learning architecture for predicting T cell receptor specificity from sequence data, achieving state-of-the-art performance.",
-      tags: ["Machine Learning", "Immunology", "Deep Learning"],
-      link: "#"
-    },
-    {
-      title: "Single-Cell Transcriptomics Reveals Novel Immune Cell States in Chronic Inflammation",
-      authors: "Collaborator A, Your Name, et al.",
-      journal: "Cell Systems",
-      year: "2023",
-      description: "Comprehensive single-cell analysis identifying previously unknown immune cell subpopulations and their functional roles.",
-      tags: ["scRNA-seq", "Immunology", "Systems Biology"],
-      link: "#"
-    },
-    {
-      title: "Computational Framework for Multi-Omics Integration in Immunological Studies",
-      authors: "Your Name, Collaborator B",
-      journal: "Bioinformatics",
-      year: "2023",
-      description: "Open-source computational pipeline for integrating genomic, transcriptomic, and proteomic data in immunology research.",
-      tags: ["Multi-omics", "Software", "Computational Biology"],
-      link: "#"
+      description: "Computational immunology approach revealing dual immune cell behaviors in non-small cell lung cancer across disease stages, providing insights for improved patient outcomes.",
+      tags: ["Cancer", "Immunology", "Transcriptomics", "Systems Biology"],
+      link: "https://doi.org/10.3389/fimmu.2024.1394965"
     }
   ];
 
@@ -105,14 +105,22 @@ const Publications = () => {
 
           <div className="text-center mt-12">
             <p className="text-muted-foreground mb-4">
-              View my complete publication list on Google Scholar
+              View my complete publication list and profile
             </p>
-            <Button variant="outline" size="lg" asChild>
-              <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
-                <ExternalLink />
-                Google Scholar Profile
-              </a>
-            </Button>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button variant="outline" size="lg" asChild>
+                <a href="https://orcid.org/0009-0004-6712-0864" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink />
+                  ORCID Profile
+                </a>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <a href="https://www.researchgate.net/profile/Marcelo-Hurtado-2" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink />
+                  ResearchGate Profile
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

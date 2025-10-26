@@ -7,26 +7,26 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.name@university.edu",
-      link: "mailto:your.name@university.edu"
+      value: "marcelo.hurtado@inserm.fr",
+      link: "mailto:marcelo.hurtado@inserm.fr"
     },
     {
       icon: Building2,
       label: "Institution",
-      value: "Department of Computational Biology, University Name",
+      value: "Cancer Research Center of Toulouse (CRCT), Université Paul Sabatier Toulouse III",
       link: null
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/yourusername",
-      link: "https://github.com/yourusername"
+      value: "github.com/mhurtado13",
+      link: "https://github.com/mhurtado13"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/yourprofile",
-      link: "https://linkedin.com/in/yourprofile"
+      value: "linkedin.com/in/marcelo-hurtado",
+      link: "https://www.linkedin.com/in/marcelo-hurtado/"
     }
   ];
 
@@ -81,7 +81,7 @@ const Contact = () => {
                 Looking for collaborations or have questions about my research?
               </p>
               <Button variant="hero" size="lg" asChild>
-                <a href="mailto:your.name@university.edu">
+                <a href="mailto:marcelo.hurtado@inserm.fr">
                   <Mail />
                   Send Me an Email
                 </a>

@@ -52,7 +52,7 @@ const Hero = () => {
 
           <div className="flex gap-6 justify-center pt-8 animate-fade-in-slow">
             <a 
-              href="https://github.com" 
+              href="https://github.com/mhurtado13" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white transition-colors hover:scale-110 transform duration-200"
@@ -61,7 +61,7 @@ const Hero = () => {
               <Github className="w-7 h-7" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/marcelo-hurtado/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white transition-colors hover:scale-110 transform duration-200"
