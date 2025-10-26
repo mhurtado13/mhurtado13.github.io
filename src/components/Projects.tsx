@@ -6,24 +6,24 @@ import { Microscope, ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "TCR-Seq Deep Learning Pipeline",
-      description: "End-to-end machine learning pipeline for analyzing T cell receptor sequencing data, predicting antigen specificity with 94% accuracy using transformer-based architectures.",
-      tags: ["PyTorch", "Transformers", "Immunology"],
+      title: "LungPredict",
+      description: "Profiling the Non-Small Cell Lung Cancer (NSCLC) microenvironment by integrating transcriptomics to uncover potential phenotypic profiles associated to patterns in immune infiltration",
+      tags: ["Non small cell lung cancer", "Immunotherapy", "Survival analysis"],
+      github: "https://github.com/VeraPancaldiLab/LungPredict1_paper",
+      demo: "#"
+    },
+    {
+      title: "ABM NLC-CLL",
+      description: "Physicell model of NLC-CLL differentiation",
+      tags: ["Physicell", "Agent based models", "Modeling", "Chronic Lymphocytic Leukemia"],
       github: "#",
       demo: "#"
     },
     {
-      title: "Single-Cell Multi-Omics Integration Platform",
-      description: "Computational framework integrating scRNA-seq, scATAC-seq, and proteomics data to identify novel immune cell states and regulatory networks in autoimmune diseases.",
-      tags: ["Python", "Scanpy", "Multi-omics"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Immune Repertoire Dynamics Tracker",
-      description: "Interactive web application for visualizing longitudinal changes in immune repertoire diversity during vaccination and infection, built with modern data visualization libraries.",
-      tags: ["React", "D3.js", "Bioinformatics"],
-      github: "#",
+      title: "NLC_CLL_HPC_exploration",
+      description: "HPC exploration of parameters for NLC-CLL physicell model",
+      tags: ["HPC arquitecture", "Bash", "Python", "Calibration", "Sensitivity analysis", "Genetic algorithms"],
+      github: "https://github.com/mhurtado13/NLC-CLL_HPC_exploration",
       demo: "#"
     }
   ];

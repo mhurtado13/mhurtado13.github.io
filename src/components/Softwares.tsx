@@ -9,30 +9,30 @@ const Softwares = () => {
       title: "multideconv",
       description: "Integrative pipeline for cell type deconvolution from bulk RNAseq using first and second generation methods",
       version: "v0.0.1",
-      downloads: "10K+",
+      downloads: "#",
       tags: ["R", "Rstudio", "Cell type deconvolution"],
-      github: "https://verapancaldilab.github.io/multideconv/",
-      docs: "#",
+      github: "https://github.com/VeraPancaldiLab/multideconv/",
+      docs: "https://verapancaldilab.github.io/multideconv/",
       pypi: "#"
     },
     {
-      title: "scOmics-Integrate",
-      description: "R package for integrated analysis of single-cell multi-omics data. Supports scRNA-seq, scATAC-seq, and CITE-seq with advanced visualization tools.",
-      version: "v1.5.2",
-      downloads: "5K+",
-      tags: ["R", "Bioconductor", "Single-Cell"],
-      github: "#",
-      docs: "#",
+      title: "pipeML",
+      description: "A robust R machine learning pipeline for classification tasks and survival analysis.",
+      version: "v0.0.1",
+      downloads: "#",
+      tags: ["R", "tidymodels", "caret", "Machine Learning"],
+      github: "https://github.com/VeraPancaldiLab/pipeML",
+      docs: "https://verapancaldilab.github.io/pipeML/",
       pypi: "#"
     },
     {
-      title: "RepDiversity",
-      description: "Command-line tool for calculating immune repertoire diversity metrics and comparing samples. Optimized for large-scale datasets with parallel processing.",
-      version: "v1.2.0",
-      downloads: "3K+",
-      tags: ["Python", "CLI", "Bioinformatics"],
-      github: "#",
-      docs: "#",
+      title: "CellTFusion",
+      description: "Integration of immune-cell type deconvolution features and prior-knowledge networks of TFs-gene interactions to characterize potential cell states of the tumor microenvironment using bulk RNAseq data",
+      version: "v0.0.1",
+      downloads: "#",
+      tags: ["R", "decoupleR", "transcription factor","networks"],
+      github: "https://github.com/VeraPancaldiLab/CellTFusion",
+      docs: "https://verapancaldilab.github.io/CellTFusion/",
       pypi: "#"
     }
   ];
@@ -138,7 +138,7 @@ const Softwares = () => {
               Find more of my open source contributions on GitHub
             </p>
             <Button variant="outline" size="lg" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/mhurtado13" target="_blank" rel="noopener noreferrer">
                 <Github />
                 View GitHub Profile
               </a>
