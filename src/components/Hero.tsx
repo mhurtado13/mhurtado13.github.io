@@ -40,13 +40,17 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center animate-fade-in-slow pt-4">
-            <Button variant="hero" size="lg" className="group">
-              <Mail className="group-hover:scale-110 transition-transform" />
-              Get in Touch
+            <Button variant="hero" size="lg" className="group" asChild>
+              <a href="/contact">
+                <Mail className="group-hover:scale-110 transition-transform" />
+                Get in Touch
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20">
-              <FileText />
-              View CV
+            <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20" asChild>
+              <a href="/about">
+                <FileText />
+                View Profile
+              </a>
             </Button>
           </div>
 
