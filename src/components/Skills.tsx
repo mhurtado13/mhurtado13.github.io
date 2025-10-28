@@ -4,29 +4,34 @@ import { Badge } from "@/components/ui/badge";
 const Skills = () => {
   const skillCategories = [
     {
-      category: "Programming Languages",
-      skills: ["Python", "R", "Julia", "Bash/Shell", "C++", "SQL"],
+      category: "Transcriptomics",
+      skills: ["Bulk RNA-Seq", "Single cell RNA-Seq", "Cell type deconvolution", "Transcription factor activity", "Network analysis"],
       color: "from-primary to-primary/80"
     },
     {
-      category: "Computational Tools",
-      skills: ["PyTorch", "TensorFlow", "Scanpy", "Seurat", "Bioconductor", "scikit-learn"],
+      category: "Multiscale Modeling",
+      skills: ["Agent Based modeling", "Physicell software", "HPC architecture", "Model exploration", "Sensitivity analysis", "Genetic algorithms"],
       color: "from-accent to-accent/80"
     },
     {
-      category: "Bioinformatics",
-      skills: ["RNA-seq", "scRNA-seq", "TCR-seq", "Genomic alignment", "Variant calling", "GWAS"],
+      category: "Synthetic Biology",
+      skills: ["CRISPR-CAS9 gRNAs design", "Vector cloning", "Plasmid design", "Primers design"],
       color: "from-secondary to-secondary/80"
     },
     {
-      category: "Data Science",
-      skills: ["Deep Learning", "Statistical Modeling", "Data Visualization", "Dimensionality Reduction", "Network Analysis"],
+      category: "Programming & Tools",
+      skills: ["Python", "R", "C++", "Bash", "Julia", "SQL", "Git", "VSCode", "Matlab", "HTML5", "CSS3"],
       color: "from-primary via-accent to-secondary"
     },
     {
-      category: "High-Performance Computing",
-      skills: ["Cluster computing", "GPU acceleration", "Workflow management", "Docker", "Nextflow"],
+      category: "Bioinformatics & Data Science",
+      skills: ["PyTorch", "TensorFlow", "Scanpy", "Seurat", "Bioconductor", "scikit-learn", "Deep Learning", "Statistical Modeling", "Machine Learning"],
       color: "from-accent to-primary"
+    },
+    {
+      category: "Laboratory & Design",
+      skills: ["Benchling", "Snapgene", "Biomedical signals", "Medical robotics", "Bioprocesses"],
+      color: "from-secondary via-primary to-accent"
     }
   ];
 
