@@ -64,7 +64,7 @@ const About = () => {
             <h3 className="text-2xl font-bold text-foreground mb-6">About My Research</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a PhD student in Computational Biology at Université Paul Sabatier Toulouse III, working at the 
+                I'm a PhD student in Computational Biology at Paul Sabatier University, working at the 
                 Cancer Research Center of Toulouse (CRCT) in Vera Pancaldi's lab. My research capitalizes on recent 
                 advances in modeling intercellular and intracellular processes in complex tumor environments, where 
                 effective control is key to improved cancer therapy effectiveness.

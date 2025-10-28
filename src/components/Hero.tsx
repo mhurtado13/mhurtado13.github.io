@@ -26,17 +26,16 @@ const Hero = () => {
               Computational Biology
               <br />
               <span className="bg-gradient-to-r from-accent to-white bg-clip-text text-transparent">
-                Meets Innovation
+                meets immunology
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
-              PhD Student in Computational Biology & Immunology
+              PhD student in Computational Biology and Bioinformatics
             </p>
           </div>
 
           <p className="text-lg text-white/80 max-w-3xl mx-auto animate-fade-in-slow leading-relaxed">
-            Leveraging advanced computational methods and machine learning to decode the immune system, 
-            from single-cell genomics to systems-level immunological insights.
+            Advancing cancer systems biology through multiscale modeling and transcriptomics approaches to decode the tumor microenvironment.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center animate-fade-in-slow pt-4">
