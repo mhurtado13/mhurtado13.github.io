@@ -13,7 +13,7 @@ const Contact = () => {
     {
       icon: Building2,
       label: "Institution",
-      value: "Cancer Research Center of Toulouse (CRCT), Paul Sabatier University",
+      value: "Cancer Research Center of Toulouse",
       link: null
     },
     {
