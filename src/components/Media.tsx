@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { ExternalLink, Newspaper } from "lucide-react";
+import { ExternalLink, Newspaper, Youtube } from "lucide-react";
 
 const Media = () => {
   const pressReleases = [
@@ -26,6 +26,15 @@ const Media = () => {
       url: "https://elcomercio.pe/tecnologia/ciencias/estudiantes-peruanos-desarrollan-sistema-para-preservar-vacunas-contra-la-covid-19-noticia/",
       type: "Press Coverage",
       date: "2021"
+    },
+    {
+      title: "LECCHAIN Project Video Presentation",
+      outlet: "YouTube",
+      description: "Video presentation of the LECCHAIN project showcasing the innovative approach to improving vaccine thermal tolerance using synthetic biology.",
+      url: "https://www.youtube.com/watch?v=Br8n5n1vN8M",
+      type: "Video",
+      date: "2021",
+      isVideo: true
     }
   ];
 
@@ -53,38 +62,70 @@ const Media = () => {
                 className="p-6 md:p-8 hover:shadow-[var(--shadow-medium)] transition-all duration-300 hover:-translate-y-1 bg-card border-border animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex flex-col md:flex-row md:items-start gap-4">
-                  <div className="flex-1 space-y-3">
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-2">
-                          <span className="text-xs font-semibold px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">
-                            {article.type}
-                          </span>
-                          <span className="text-xs text-muted-foreground">{article.date}</span>
-                        </div>
-                        <h3 className="text-xl font-bold text-foreground mb-2">
-                          {article.title}
-                        </h3>
-                        <p className="text-sm font-medium text-accent mb-2">
-                          {article.outlet}
-                        </p>
-                      </div>
+                {article.isVideo ? (
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-xs font-semibold px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">
+                        {article.type}
+                      </span>
+                      <span className="text-xs text-muted-foreground">{article.date}</span>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <h3 className="text-xl font-bold text-foreground mb-2">
+                      {article.title}
+                    </h3>
+                    <p className="text-sm font-medium text-accent mb-2">
+                      {article.outlet}
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
                       {article.description}
                     </p>
-                    <a
-                      href={article.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium group"
-                    >
-                      Read full article
-                      <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                    </a>
+                    <div className="aspect-video rounded-lg overflow-hidden bg-black">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src={`https://www.youtube.com/embed/${article.url.split('v=')[1]}`}
+                        title={article.title}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="w-full h-full"
+                      ></iframe>
+                    </div>
                   </div>
-                </div>
+                ) : (
+                  <div className="flex flex-col md:flex-row md:items-start gap-4">
+                    <div className="flex-1 space-y-3">
+                      <div className="flex items-start justify-between gap-4">
+                        <div className="flex-1">
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="text-xs font-semibold px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">
+                              {article.type}
+                            </span>
+                            <span className="text-xs text-muted-foreground">{article.date}</span>
+                          </div>
+                          <h3 className="text-xl font-bold text-foreground mb-2">
+                            {article.title}
+                          </h3>
+                          <p className="text-sm font-medium text-accent mb-2">
+                            {article.outlet}
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground leading-relaxed">
+                        {article.description}
+                      </p>
+                      <a
+                        href={article.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium group"
+                      >
+                        Read full article
+                        <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                      </a>
+                    </div>
+                  </div>
+                )}
               </Card>
             ))}
           </div>
