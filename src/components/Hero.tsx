@@ -20,24 +20,26 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <div className="space-y-4 animate-fade-in">
-            <p className="text-xl md:text-2xl text-white/90 font-medium">
-              Marcelo Hurtado
-            </p>
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-              Computational Biology
+        <div className="max-w-5xl mx-auto space-y-10">
+          <div className="space-y-6 animate-fade-in">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-tight tracking-tight">
+              Marcelo
               <br />
-              <span className="bg-gradient-to-r from-accent to-white bg-clip-text text-transparent">
-                meets immunology
+              <span className="bg-gradient-to-r from-accent via-white to-accent bg-clip-text text-transparent">
+                Hurtado
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
-              PhD student in Computational Biology and Bioinformatics
-            </p>
+            <div className="space-y-3">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white/95 font-semibold">
+                Computational Biology meets Immunology
+              </p>
+              <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+                PhD student in Computational Biology and Bioinformatics
+              </p>
+            </div>
           </div>
 
-          <p className="text-lg text-white/80 max-w-3xl mx-auto animate-fade-in-slow leading-relaxed">
+          <p className="text-base md:text-lg text-white/75 max-w-3xl mx-auto animate-fade-in-slow leading-relaxed px-4">
             Advancing cancer systems biology through multiscale modeling and transcriptomics approaches to decode the tumor microenvironment.
           </p>
 
