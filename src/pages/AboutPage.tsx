@@ -15,18 +15,6 @@ const AboutPage = () => {
         <Skills />
         <Experience />
         <Awards />
-        <section className="py-16 bg-muted/30">
-          <div className="container mx-auto px-6 text-center">
-            <Button 
-              size="lg"
-              className="gap-2"
-              onClick={() => window.open('/CV_Marcelo_Hurtado.pdf', '_blank')}
-            >
-              <Download className="h-5 w-5" />
-              Download Full CV
-            </Button>
-          </div>
-        </section>
       </div>
     </>
   );
