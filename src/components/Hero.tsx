@@ -22,6 +22,9 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="space-y-4 animate-fade-in">
+            <p className="text-xl md:text-2xl text-white/90 font-medium">
+              Marcelo Hurtado
+            </p>
             <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
               Computational Biology
               <br />
