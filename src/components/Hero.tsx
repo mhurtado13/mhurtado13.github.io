@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Github, Linkedin, FileText } from "lucide-react";
+import { Mail, Github, Linkedin, FileText, Download } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -48,6 +48,15 @@ const Hero = () => {
                 <FileText />
                 View Profile
               </a>
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
+              onClick={() => window.open('/CV_Marcelo_Hurtado.pdf', '_blank')}
+            >
+              <Download />
+              Download CV
             </Button>
           </div>
 
