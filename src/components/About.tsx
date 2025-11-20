@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: Microscope,
       title: "Immunology",
-      description: "Immunotherapy, survival analysis, cell type deconvolution"
+      description: "Immunotherapy response, survival analysis and cell type deconvolution"
     },
     {
       icon: Database,
