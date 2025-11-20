@@ -20,17 +20,17 @@ const Skills = () => {
     },
     {
       category: "Programming & Tools",
-      skills: ["Python", "R", "C++", "Bash", "Julia", "SQL", "Git", "VSCode", "Matlab", "HTML5", "CSS3"],
+      skills: ["Python", "R", "C++", "Bash", "Git", "VSCode", "Matlab", "CSS3", "SQL"],
       color: "from-primary via-accent to-secondary"
     },
     {
       category: "Bioinformatics & Data Science",
-      skills: ["PyTorch", "TensorFlow", "Scanpy", "Seurat", "Bioconductor", "scikit-learn", "Deep Learning", "Statistical Modeling", "Machine Learning"],
+      skills: ["Seurat", "Bioconductor", "Machine Learning", "dplyr", "tidymodels"],
       color: "from-accent to-primary"
     },
     {
       category: "Laboratory & Design",
-      skills: ["Benchling", "Snapgene", "Biomedical signals", "Medical robotics", "Bioprocesses"],
+      skills: ["Benchling", "Snapgene", "Biomedical signals", "Vector cloning", "Plasmid design", "Bioprocesses"],
       color: "from-secondary via-primary to-accent"
     }
   ];
@@ -64,7 +64,7 @@ const Skills = () => {
                     <Badge 
                       key={skillIndex}
                       variant="secondary"
-                      className="px-4 py-2 text-sm font-medium bg-gradient-to-r from-muted to-muted/80 hover:from-primary/20 hover:to-accent/20 transition-all duration-300 border-border"
+                      className="px-4 py-2 text-sm font-medium bg-foreground/90 text-background hover:bg-foreground transition-all duration-300 border-border"
                     >
                       {skill}
                     </Badge>

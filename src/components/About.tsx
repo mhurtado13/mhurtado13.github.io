@@ -5,23 +5,23 @@ const About = () => {
   const interests = [
     {
       icon: Microscope,
-      title: "Immunology",
-      description: "Single-cell immune profiling, T cell repertoire analysis, and adaptive immunity dynamics"
-    },
-    {
-      icon: Brain,
-      title: "Machine Learning",
-      description: "Deep learning for biological sequences, dimensionality reduction, and predictive modeling"
+      title: "Computational Immunology",
+      description: "Cell type deconvolution and prediction of immunotherapy response"
     },
     {
       icon: Database,
       title: "Genomics",
-      description: "RNA-seq analysis, multi-omics integration, and gene regulatory networks"
+      description: "RNA-seq analysis including bulk RNA-seq data and single cell data, gene regulatory networks and inference of transcription factor activity"
+    },
+    {
+      icon: Brain,
+      title: "Machine Learning",
+      description: "Supervised learning for classification and survival tasks, dimensionality reduction and predictive modeling"
     },
     {
       icon: TrendingUp,
       title: "Systems Biology",
-      description: "Network analysis, pathway modeling, and computational systems immunology"
+      description: "Network analysis, pathway modeling and multiscale simulations"
     }
   ];
 
