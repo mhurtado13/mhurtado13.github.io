@@ -5,8 +5,8 @@ const About = () => {
   const interests = [
     {
       icon: Microscope,
-      title: "Computational Immunology",
-      description: "Cell type deconvolution and prediction of immunotherapy response"
+      title: "Immunology",
+      description: "Immunotherapy, survival analysis, cell type deconvolution"
     },
     {
       icon: Database,
