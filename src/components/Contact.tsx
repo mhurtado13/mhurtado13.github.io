@@ -6,9 +6,15 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      label: "Email",
+      label: "Professional Email",
       value: "marcelo.hurtado@inserm.fr",
       link: "mailto:marcelo.hurtado@inserm.fr"
+    },
+    {
+      icon: Mail,
+      label: "Personal Email",
+      value: "marcelo.hurt137@gmail.com",
+      link: "mailto:marcelo.hurt137@gmail.com"
     },
     {
       icon: Building2,
