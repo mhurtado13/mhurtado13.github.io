@@ -15,13 +15,22 @@ const Publications = () => {
       link: "https://doi.org/10.1101/2025.04.29.651220"
     },
     {
-      title: "Time-series RNA-Seq and data-driven network inference unveil dynamics of cell activation, survival and crosstalk in Chronic Lymphocytic Leukaemia in vitro models",
-      authors: "Malvina Marku, Hugo Chenel, Julie Bordenave, Marcelo Hurtado, Marcin Domagala, Flavien Raynal, Mary Poupot, Loïc Ysebaert, Andrei Zinovyev, Vera Pancaldi",
-      journal: "bioRxiv (Preprint)",
-      year: "2025",
+      title: "Data driven network inference and longitudinal transcriptomics unveil dynamic regulation in Chronic Lymphocytic Leukaemia models",
+      authors: "Marku M.*, Chenel H.*, ..., Hurtado M., et al.",
+      journal: "npj Systems Biology and Applications",
+      year: "2026",
       description: "In-depth analysis revealing dynamic regulatory changes within cancer cells in response to immune cell interactions, uncovering key regulators in Chronic Lymphocytic Leukaemia.",
       tags: ["RNA-seq", "Network Inference", "Cancer", "Immunology"],
-      link: "https://doi.org/10.1101/2025.04.20.649300"
+      link: "https://doi.org/10.1038/s41540-025-00645-4"
+    },
+    {
+      title: "PhysiGym: bridging the gap between the Gymnasium reinforcement learning application interface and the PhysiCell agent-based model software",
+      authors: "Bertin A.*, Bucher E.*, ..., Hurtado M., et al.",
+      journal: "bioRxiv (Preprint)",
+      year: "2025",
+      description: "A novel framework bridging reinforcement learning interfaces with agent-based modeling for computational biology applications.",
+      tags: ["Reinforcement Learning", "Agent-Based Modeling", "Computational Biology"],
+      link: "https://doi.org/10.1101/2025.09.18.677030"
     },
     {
       title: "Transcriptomics profiling of the non-small cell lung cancer microenvironment across disease stages reveals dual immune cell-type behaviors",
