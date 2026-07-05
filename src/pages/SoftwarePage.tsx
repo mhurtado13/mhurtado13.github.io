@@ -11,11 +11,20 @@ export function SoftwarePage() {
       <div className="space-y-5">
         {software.map((pkg) => (
           <Card key={pkg.name}>
-            <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <h3 className="font-serif-heading text-lg font-semibold text-ink">{pkg.name}</h3>
-              <span className="text-sm font-medium text-accent">{pkg.version}</span>
+            <div className="flex gap-4">
+              <img
+                src={pkg.logo}
+                alt={`${pkg.name} logo`}
+                className="h-16 w-16 shrink-0 rounded-lg object-contain"
+              />
+              <div className="min-w-0 flex-1">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h3 className="font-serif-heading text-lg font-semibold text-ink">{pkg.name}</h3>
+                  <span className="text-sm font-medium text-accent">{pkg.version}</span>
+                </div>
+                <p className="mt-2 text-sm text-ink-soft">{pkg.description}</p>
+              </div>
             </div>
-            <p className="mt-2 text-sm text-ink-soft">{pkg.description}</p>
             <div className="mt-3 flex flex-wrap gap-2">
               {pkg.tags.map((tag) => (
                 <Badge key={tag}>{tag}</Badge>

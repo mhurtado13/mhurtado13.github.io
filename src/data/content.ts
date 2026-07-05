@@ -60,6 +60,14 @@ export const consulting = {
 
 export const experience = [
   {
+    role: "Visiting PhD Student",
+    org: "Eindhoven University of Technology (TU/e), Eindhoven, Netherlands",
+    detail: "Department of Biomedical Engineering — Supervisor: Dr. Federica Eduati",
+    period: "Mar 2026 – Jun 2026",
+    project: "Personalisation of mechanistic Boolean models through integration of transcriptomics data.",
+    achievements: [],
+  },
+  {
     role: "PhD Student",
     org: "Paul Sabatier University, Toulouse, France",
     detail: "Cancer Research Center of Toulouse (CRCT) — Team NetB(IO)² — Supervisor: Vera Pancaldi",
@@ -237,7 +245,7 @@ export const projects = [
     name: "ABM NLC-CLL",
     description: "PhysiCell model of NLC-CLL differentiation.",
     tags: ["PhysiCell", "Agent-based models", "Modeling", "Chronic Lymphocytic Leukemia"],
-    github: null,
+    github: "https://github.com/mhurtado13/ABM_NLC-CLL",
   },
   {
     name: "NLC_CLL_HPC_exploration",
@@ -256,6 +264,7 @@ export const software = [
     tags: ["R", "RStudio", "Cell type deconvolution"],
     github: "https://github.com/VeraPancaldiLab/multideconv/",
     docs: "https://verapancaldilab.github.io/multideconv/",
+    logo: "/logos/multideconv.png",
   },
   {
     name: "pipeML",
@@ -264,6 +273,7 @@ export const software = [
     tags: ["R", "tidymodels", "caret", "Machine Learning"],
     github: "https://github.com/VeraPancaldiLab/pipeML",
     docs: "https://verapancaldilab.github.io/pipeML/",
+    logo: "/logos/pipeML.png",
   },
   {
     name: "CellTFusion",
@@ -273,6 +283,16 @@ export const software = [
     tags: ["R", "decoupleR", "Transcription factor", "Networks"],
     github: "https://github.com/VeraPancaldiLab/CellTFusion",
     docs: "https://verapancaldilab.github.io/CellTFusion/",
+    logo: "/logos/CellTFusion.png",
+  },
+  {
+    name: "multimethconv",
+    version: "v0.0.1",
+    description: "Integrative pipeline for cell type deconvolution from methylation data.",
+    tags: ["R", "DNA Methylation", "Cell type deconvolution"],
+    github: "https://github.com/VeraPancaldiLab/multimethconv",
+    docs: "https://verapancaldilab.github.io/multimethconv/",
+    logo: "/logos/multimethconv.png",
   },
 ];
 
@@ -293,6 +313,14 @@ export const awards = [
 ];
 
 export const talksOral = [
+  {
+    title:
+      "Estimating tumour microenvironment cellular states from bulk RNA-seq reveals biomarkers of clinical outcome in Non Small Cell Lung Cancer (NSCLC) across disease stages",
+    venue: "EACR – Cancer Genomics, Multiomics and Computational Biology",
+    type: "Oral presentation",
+    location: "Essen, Germany",
+    date: "12–14 May 2026",
+  },
   {
     title:
       "CellTFusion: A novel approach to unravel cell states via cell type deconvolution and TF activity estimated from bulk RNAseq data identifies clinically relevant cell niches",
@@ -352,13 +380,6 @@ export const talksOral = [
 ];
 
 export const talksPoster = [
-  {
-    title:
-      "Estimating tumour microenvironment cellular states from bulk RNA-seq reveals biomarkers of clinical outcome in Non Small Cell Lung Cancer (NSCLC) across disease stages",
-    venue: "EACR – Cancer Genomics, Multiomics and Computational Biology",
-    location: "Essen, Germany",
-    year: "12–14 May 2026",
-  },
   {
     title:
       "Estimating NSCLC tumour microenvironment cellular states from bulk RNAseq produces biomarkers of clinical outcome across stages",

@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { Github, Linkedin, ExternalLink, Download, ArrowRight } from "lucide-react";
+import { Github, Linkedin, ExternalLink, Download, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
-import { profile, researchFocus } from "@/data/content";
+import { Badge } from "@/components/ui/Badge";
+import { profile, researchFocus, consulting } from "@/data/content";
 
 export function HomePage() {
   return (
@@ -60,6 +61,33 @@ export function HomePage() {
               <p className="text-sm text-ink-soft">{item.description}</p>
             </Card>
           ))}
+        </div>
+      </section>
+
+      <section className="border-t border-line bg-paper-dim">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <Card className="relative overflow-hidden bg-gradient-to-br from-brand to-accent p-10 text-paper">
+            <Sparkles className="absolute right-6 top-6 opacity-30" size={48} />
+            <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-paper/70">
+              Consulting
+            </p>
+            <h2 className="mb-4 max-w-xl font-serif-heading text-3xl font-semibold md:text-4xl">
+              Bring computational biology expertise to your project
+            </h2>
+            <p className="max-w-xl text-paper/85">{consulting.intro}</p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {consulting.topics.map((topic) => (
+                <Badge key={topic} className="border-paper/30 bg-paper/10 text-paper">
+                  {topic}
+                </Badge>
+              ))}
+            </div>
+            <Link to="/contact" className="mt-8 inline-block">
+              <Button variant="primary" className="bg-paper text-brand hover:bg-paper/90">
+                Get in Touch <ArrowRight size={16} />
+              </Button>
+            </Link>
+          </Card>
         </div>
       </section>
     </div>

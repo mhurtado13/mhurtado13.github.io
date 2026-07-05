@@ -1,9 +1,6 @@
-import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/ui/Card";
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
-import { about, researchFocus, consulting } from "@/data/content";
+import { about, researchFocus } from "@/data/content";
 
 export function AboutPage() {
   return (
@@ -25,21 +22,6 @@ export function AboutPage() {
             </Card>
           ))}
         </div>
-      </div>
-
-      <div className="mt-16">
-        <h3 className="mb-4 font-serif-heading text-2xl font-semibold text-ink">Consulting</h3>
-        <Card>
-          <p className="text-ink-soft">{consulting.intro}</p>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {consulting.topics.map((topic) => (
-              <Badge key={topic}>{topic}</Badge>
-            ))}
-          </div>
-          <Link to="/contact" className="mt-6 inline-block">
-            <Button variant="primary">Get in Touch</Button>
-          </Link>
-        </Card>
       </div>
     </div>
   );

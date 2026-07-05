@@ -16,11 +16,13 @@ export function ExperiencePage() {
             <p className="mt-1 text-sm font-medium text-ink">{job.org}</p>
             <p className="text-sm text-ink-soft">{job.detail}</p>
             <p className="mt-3 text-sm italic text-ink-soft">{job.project}</p>
-            <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm text-ink-soft">
-              {job.achievements.map((a, i) => (
-                <li key={i}>{a}</li>
-              ))}
-            </ul>
+            {job.achievements.length > 0 && (
+              <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm text-ink-soft">
+                {job.achievements.map((a, i) => (
+                  <li key={i}>{a}</li>
+                ))}
+              </ul>
+            )}
           </div>
         ))}
       </div>
