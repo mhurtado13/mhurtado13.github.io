@@ -65,7 +65,9 @@ export const experience = [
     detail: "Department of Biomedical Engineering — Supervisor: Dr. Federica Eduati",
     period: "Mar 2026 – Jun 2026",
     project: "Personalisation of mechanistic Boolean models through integration of transcriptomics data.",
-    achievements: [],
+    achievements: [
+      "Improve and develop an R package for cell-cell communication from bulk RNA-seq data based on kernel and Monte-Carlo algorithms (RaCiNG).",
+    ],
   },
   {
     role: "PhD Student",
@@ -312,7 +314,7 @@ export const awards = [
   { title: "CARe International – PhD mobility", category: "PhD Mobility Fellowship", year: "2026" },
   { title: "ISMB/ECCB 2025 – Full conference fellowship, Liverpool, UK", category: "Conference Fellowship", year: "2025" },
   { title: "Prix de la Fondation Silab Jean Paufique", category: "Research Excellence", year: "2024" },
-  { title: "Best poster presentation award", category: "Conference Recognition", year: "2024" },
+  { title: "Best oral presentation award", category: "Conference Recognition", year: "2024" },
   { title: "Campus France – France Excellence Eiffel PhD scholarship", category: "PhD Fellowship", year: "2023" },
   { title: "Toulouse Foundation Cancer Santé – PhD scholarship", category: "PhD Fellowship", year: "2023" },
   { title: "CARe Graduate School Univ. Paul Sabatier – Doctoral School Fellowship", category: "PhD Fellowship", year: "2023" },
