@@ -160,6 +160,17 @@ export const skills = [
 export const publications = [
   {
     title:
+      "CellTFusion: A transcriptional regulatory network framework for the identification of functional multicellular states from bulk RNA-seq data",
+    authors: "Hurtado, M.*, Pancaldi, V.",
+    venue: "bioRxiv (Preprint)",
+    year: "2026",
+    description:
+      "A transcriptional regulatory network framework integrating cell type deconvolution and transcription factor activity to identify functional multicellular states from bulk RNA-seq data.",
+    tags: ["Transcriptomics", "Networks", "Transcription Factor", "Computational Biology"],
+    link: "https://doi.org/10.64898/2026.06.30.735682",
+  },
+  {
+    title:
       "Specific dendritic cells spatial organization is associated to ICB Response in Non–Small-Cell Lung Cancer",
     authors: "Gobbini, E.*, Duplouye, P.*, Hurtado, M.*, et al.",
     venue: "Preprint",
