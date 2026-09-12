@@ -315,6 +315,7 @@ export const software = [
     tags: ["R", "Cell-cell communication", "Network inference"],
     github: "https://github.com/VeraPancaldiLab/RaCInG_package",
     docs: "https://github.com/VeraPancaldiLab/RaCInG_package",
+    logo: "/logos/RaCInG.png",
   },
 ];
 
