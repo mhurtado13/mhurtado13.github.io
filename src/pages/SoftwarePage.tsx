@@ -12,11 +12,13 @@ export function SoftwarePage() {
         {software.map((pkg) => (
           <Card key={pkg.name}>
             <div className="flex gap-4">
-              <img
-                src={pkg.logo}
-                alt={`${pkg.name} logo`}
-                className="h-16 w-16 shrink-0 rounded-lg object-contain"
-              />
+              {pkg.logo && (
+                <img
+                  src={pkg.logo}
+                  alt={`${pkg.name} logo`}
+                  className="h-16 w-16 shrink-0 rounded-lg object-contain"
+                />
+              )}
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="font-serif-heading text-lg font-semibold text-ink">{pkg.name}</h3>

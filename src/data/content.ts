@@ -308,14 +308,13 @@ export const software = [
     logo: "/logos/multimethconv.png",
   },
   {
-    name: "RaCInG",
+    name: "RaCInG 2.0: Integrating multiple deconvolution methods for fine-grained cell-cell communication network inference in the tumor microenvironment from bulk RNA-seq data",
     version: "v0.0.1",
     description:
       "R package for inferring cell-cell communication networks from bulk RNAseq data using kernel and Monte-Carlo algorithms.",
     tags: ["R", "Cell-cell communication", "Network inference"],
     github: "https://github.com/VeraPancaldiLab/RaCInG_package",
     docs: "https://github.com/VeraPancaldiLab/RaCInG_package",
-    logo: "/favicon.svg",
   },
 ];
 
