@@ -307,9 +307,20 @@ export const software = [
     docs: "https://verapancaldilab.github.io/multimethconv/",
     logo: "/logos/multimethconv.png",
   },
+  {
+    name: "RaCInG",
+    version: "v0.0.1",
+    description:
+      "R package for inferring cell-cell communication networks from bulk RNAseq data using kernel and Monte-Carlo algorithms.",
+    tags: ["R", "Cell-cell communication", "Network inference"],
+    github: "https://github.com/VeraPancaldiLab/RaCInG_package",
+    docs: "https://github.com/VeraPancaldiLab/RaCInG_package",
+    logo: "/favicon.svg",
+  },
 ];
 
 export const awards = [
+  { title: "Fin de thèse en cancérologie – Fondation ARC & FRM", category: "PhD Completion Fellowship", year: "2026" },
   { title: "ERASMUS+ Fellowship – PhD mobility", category: "PhD Mobility Fellowship", year: "2026" },
   { title: "CARe International – PhD mobility", category: "PhD Mobility Fellowship", year: "2026" },
   { title: "ISMB/ECCB 2025 – Full conference fellowship, Liverpool, UK", category: "Conference Fellowship", year: "2025" },
@@ -461,6 +472,24 @@ export const talksPoster = [
 ];
 
 export const media = [
+  {
+    title: "Plus de 500 000 € pour soutenir des projets de recherche contre le cancer à Toulouse",
+    outlet: "La Dépêche",
+    description:
+      "Press coverage of over €500,000 in funding awarded to support cancer research projects in Toulouse, including work at the Cancer Research Center of Toulouse (CRCT).",
+    type: "Press Coverage",
+    year: "2023",
+    link: "https://www.ladepeche.fr/2023/06/28/plus-de-500-000-eur-pour-soutenir-des-projets-de-recherche-contre-le-cancer-a-toulouse-11302884.php",
+  },
+  {
+    title: "Innovations in immuno-oncology: from data to therapeutic insights",
+    outlet: "La Gazette du Laboratoire",
+    description:
+      "Coverage of the workshop held at IUCT-Oncopole, Toulouse, bringing together researchers and clinicians to discuss computational approaches to advance immuno-oncology.",
+    type: "Press Coverage",
+    year: "2025",
+    link: "https://www.gazettelabo.fr/breves/18012Innovations-immuno-oncology.html",
+  },
   {
     title: "LECCHAIN: Improving vaccine thermal tolerance",
     outlet: "Centro Bio",
