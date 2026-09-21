@@ -61,3 +61,44 @@ html.dark body {
   font-family: var(--font-serif);
 }
 
+.hero-network-fade {
+  mask-image: radial-gradient(ellipse 55% 60% at 50% 45%, transparent 0%, black 75%);
+  -webkit-mask-image: radial-gradient(ellipse 55% 60% at 50% 45%, transparent 0%, black 75%);
+}
+
+.hero-edge {
+  stroke-width: 1;
+  opacity: 0.35;
+  stroke-dasharray: 6 10;
+  animation: hero-edge-flow 6s linear infinite;
+}
+
+.hero-node {
+  filter: drop-shadow(0 0 4px currentColor);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: hero-node-float var(--dur, 8s) ease-in-out var(--delay, 0s) infinite alternate;
+}
+
+@keyframes hero-edge-flow {
+  to {
+    stroke-dashoffset: -160;
+  }
+}
+
+@keyframes hero-node-float {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(var(--dx, 10px), var(--dy, 10px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-edge,
+  .hero-node {
+    animation: none;
+  }
+}
+

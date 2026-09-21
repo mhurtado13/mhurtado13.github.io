@@ -2,12 +2,16 @@ import { Github, BookOpen } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
-import { software } from "@/data/content";
+import { profile, software } from "@/data/content";
 
 export function SoftwarePage() {
   return (
     <div className="mx-auto max-w-4xl px-6 py-20">
-      <SectionHeader eyebrow="Tools & Packages" title="Open Source Software" />
+      <SectionHeader
+        eyebrow="Tools & Packages"
+        title="Open Source Software"
+        description={profile.tagline}
+      />
       <div className="space-y-5">
         {software.map((pkg) => (
           <Card key={pkg.name}>
