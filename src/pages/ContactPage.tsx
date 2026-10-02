@@ -5,14 +5,14 @@ import { profile } from "@/data/content";
 
 export function ContactPage() {
   return (
-    <div className="mx-auto max-w-2xl px-6 py-20 text-center">
+    <div className="mx-auto max-w-4xl px-6 py-20 text-center">
       <SectionHeader eyebrow="Get in Touch" title="Contact" />
       <p className="mx-auto max-w-xl text-lg text-ink-soft">
         Interested in collaboration, discussing research ideas, or learning more about my work? I'd love to hear
         from you.
       </p>
 
-      <div className="mt-12 space-y-4 text-left">
+      <div className="mt-12 grid grid-cols-1 gap-4 text-left sm:grid-cols-2">
         <div className="flex items-center gap-3 rounded-lg border border-line p-4">
           <Mail size={18} className="text-brand" />
           <div>
@@ -47,7 +47,7 @@ export function ContactPage() {
             </a>
           </div>
         </div>
-        <div className="flex items-center gap-3 rounded-lg border border-line p-4">
+        <div className="flex items-center gap-3 rounded-lg border border-line p-4 sm:col-span-2">
           <Linkedin size={18} className="text-brand" />
           <div>
             <p className="text-xs uppercase tracking-wide text-ink-soft">LinkedIn</p>

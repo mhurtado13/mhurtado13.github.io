@@ -170,6 +170,7 @@ export const publications = [
       "A transcriptional regulatory network framework integrating cell type deconvolution and transcription factor activity to identify functional multicellular states from bulk RNA-seq data.",
     tags: ["Transcriptomics", "Networks", "Transcription Factor", "Computational Biology"],
     link: "https://doi.org/10.64898/2026.06.30.735682",
+    figure: "/papers/celltfusion.jpg",
   },
   {
     title:
@@ -181,6 +182,7 @@ export const publications = [
       "Spatial analysis identifying dendritic cell organization patterns in the tumor microenvironment associated with response to immune checkpoint blockade in NSCLC.",
     tags: ["Spatial Biology", "Immunotherapy", "NSCLC", "Immunology"],
     link: "https://doi.org/10.64898/2026.05.04.720587",
+    figure: "/papers/lungpredict-dc.jpg",
   },
   {
     title:
@@ -192,6 +194,7 @@ export const publications = [
       "A machine learning pipeline that prevents fold-aware data leakage in omics-based clinical outcome prediction, improving the reliability of survival and classification models.",
     tags: ["Machine Learning", "Omics", "Cross-Validation", "Computational Biology"],
     link: "https://doi.org/10.64898/2026.03.12.711429",
+    figure: "/papers/pipeml.jpg",
   },
   {
     title:
@@ -203,6 +206,7 @@ export const publications = [
       "In-depth analysis revealing dynamic regulatory changes within cancer cells in response to immune cell interactions, uncovering key regulators in Chronic Lymphocytic Leukaemia.",
     tags: ["RNA-seq", "Network Inference", "Cancer", "Immunology"],
     link: "https://doi.org/10.1038/s41540-025-00645-4",
+    figure: "/papers/cll-grn.jpg",
   },
   {
     title:
@@ -214,6 +218,7 @@ export const publications = [
       "A novel computational pipeline addressing the high feature complexity and variability in cell type deconvolution methods, improving patient stratification from bulk RNA-seq data.",
     tags: ["RNA-seq", "Deconvolution", "Computational Biology", "Machine Learning"],
     link: "https://doi.org/10.1101/2025.04.29.651220",
+    figure: "/papers/multideconv.jpg",
   },
   {
     title:
@@ -225,6 +230,7 @@ export const publications = [
       "A novel framework bridging reinforcement learning interfaces with agent-based modeling for computational biology applications.",
     tags: ["Reinforcement Learning", "Agent-Based Modeling", "Computational Biology"],
     link: "https://doi.org/10.1101/2025.09.18.677030",
+    figure: "/papers/physigym.jpg",
   },
   {
     title:
@@ -236,6 +242,7 @@ export const publications = [
       "Computational immunology approach revealing dual immune cell behaviors in non-small cell lung cancer across disease stages, providing insights for improved patient outcomes.",
     tags: ["Cancer", "Immunology", "Transcriptomics", "Systems Biology"],
     link: "https://doi.org/10.3389/fimmu.2024.1394965",
+    figure: "/papers/lungpredict1.jpg",
   },
 ];
 
@@ -271,6 +278,8 @@ export const projects = [
 export const software = [
   {
     name: "multideconv",
+    category: "Cell-type deconvolution",
+    language: "R",
     version: "v0.0.1",
     description:
       "Integrative pipeline for cell type deconvolution from bulk RNAseq using first and second generation methods.",
@@ -281,6 +290,8 @@ export const software = [
   },
   {
     name: "pipeML",
+    category: "Machine learning",
+    language: "R",
     version: "v0.0.1",
     description: "A robust R machine learning pipeline for classification tasks and survival analysis.",
     tags: ["R", "tidymodels", "caret", "Machine Learning"],
@@ -290,6 +301,8 @@ export const software = [
   },
   {
     name: "CellTFusion",
+    category: "Tumour microenvironment",
+    language: "R",
     version: "v0.0.1",
     description:
       "Integration of immune-cell type deconvolution features and prior-knowledge networks of TF–gene interactions to characterize potential cell states of the tumor microenvironment using bulk RNAseq data.",
@@ -300,6 +313,8 @@ export const software = [
   },
   {
     name: "multimethconv",
+    category: "Cell-type deconvolution",
+    language: "R",
     version: "v0.0.1",
     description: "Integrative pipeline for cell type deconvolution from methylation data.",
     tags: ["R", "DNA Methylation", "Cell type deconvolution"],
@@ -308,7 +323,9 @@ export const software = [
     logo: "/logos/multimethconv.png",
   },
   {
-    name: "RaCInG 2.0: Integrating multiple deconvolution methods for fine-grained cell-cell communication network inference in the tumor microenvironment from bulk RNA-seq data",
+    name: "RaCInG 2.0",
+    category: "Cell–cell communication",
+    language: "R",
     version: "v0.0.1",
     description:
       "R package for inferring cell-cell communication networks from bulk RNAseq data using kernel and Monte-Carlo algorithms.",
@@ -337,6 +354,14 @@ export const awards = [
 ];
 
 export const talksOral = [
+  {
+    title:
+      "A new pipeline for cross-validation fold-aware machine learning prediction of clinical outcomes addresses hidden data-leakage in omics based 'predictors'",
+    venue: "ISCB-Latin America SoIBio SPBBC Conference on Bioinformatics 2026 (Not accepted)",
+    type: "Oral presentation",
+    location: "Lima, Peru",
+    date: "9–13 November 2026",
+  },
   {
     title:
       "Estimating tumour microenvironment cellular states from bulk RNA-seq reveals biomarkers of clinical outcome in Non Small Cell Lung Cancer (NSCLC) across disease stages",
@@ -473,15 +498,6 @@ export const talksPoster = [
 
 export const media = [
   {
-    title: "Plus de 500 000 € pour soutenir des projets de recherche contre le cancer à Toulouse",
-    outlet: "La Dépêche",
-    description:
-      "Press coverage of over €500,000 in funding awarded to support cancer research projects in Toulouse, including work at the Cancer Research Center of Toulouse (CRCT).",
-    type: "Press Coverage",
-    year: "2023",
-    link: "https://www.ladepeche.fr/2023/06/28/plus-de-500-000-eur-pour-soutenir-des-projets-de-recherche-contre-le-cancer-a-toulouse-11302884.php",
-  },
-  {
     title: "Innovations in immuno-oncology: from data to therapeutic insights",
     outlet: "La Gazette du Laboratoire",
     description:
@@ -489,6 +505,15 @@ export const media = [
     type: "Press Coverage",
     year: "2025",
     link: "https://www.gazettelabo.fr/breves/18012Innovations-immuno-oncology.html",
+  },
+  {
+    title: "Plus de 500 000 € pour soutenir des projets de recherche contre le cancer à Toulouse",
+    outlet: "La Dépêche",
+    description:
+      "Press coverage of over €500,000 in funding awarded to support cancer research projects in Toulouse, including work at the Cancer Research Center of Toulouse (CRCT).",
+    type: "Press Coverage",
+    year: "2023",
+    link: "https://www.ladepeche.fr/2023/06/28/plus-de-500-000-eur-pour-soutenir-des-projets-de-recherche-contre-le-cancer-a-toulouse-11302884.php",
   },
   {
     title: "LECCHAIN: Improving vaccine thermal tolerance",

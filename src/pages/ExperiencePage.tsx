@@ -3,7 +3,7 @@ import { experience, skills } from "@/data/content";
 
 export function ExperiencePage() {
   return (
-    <div className="mx-auto max-w-4xl px-6 py-20">
+    <div className="mx-auto max-w-5xl px-6 py-20">
       <SectionHeader eyebrow="Career" title="Research Experience" />
 
       <div className="space-y-10">
@@ -29,7 +29,7 @@ export function ExperiencePage() {
 
       <div className="mt-20">
         <h3 className="mb-6 font-serif-heading text-2xl font-semibold text-ink">Technical Expertise</h3>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((group) => (
             <div key={group.category}>
               <h4 className="mb-2 text-sm font-semibold uppercase tracking-wide text-accent">{group.category}</h4>

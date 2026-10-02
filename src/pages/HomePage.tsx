@@ -78,7 +78,7 @@ export function HomePage() {
             {researchFocus.map((item, index) => (
               <Card
                 key={item.title}
-                className="relative border-white/10 bg-white/5 backdrop-blur-sm transition-colors hover:border-[#0df3f2]/40 hover:shadow-none"
+                className="relative border-white/10 bg-white/5 shadow-none backdrop-blur-sm transition-colors hover:border-[#0df3f2]/40 hover:shadow-none"
               >
                 <span className="mb-3 block font-serif-heading text-sm font-semibold text-[#0df3f2]">
                   {String(index + 1).padStart(2, "0")}
@@ -93,18 +93,20 @@ export function HomePage() {
 
       <section className="border-t border-white/10 bg-black">
         <div className="mx-auto max-w-6xl px-6 py-20">
-          <Card className="relative overflow-hidden bg-white p-10">
+          <Card className="relative overflow-hidden border-transparent bg-white p-10 hover:border-transparent">
             <Sparkles className="absolute right-6 top-6 text-accent opacity-30" size={48} />
             <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">
               Consulting
             </p>
-            <h2 className="mb-4 max-w-xl font-serif-heading text-3xl font-semibold text-ink md:text-4xl">
+            <h2 className="mb-4 max-w-xl font-serif-heading text-3xl font-semibold text-neutral-900 md:text-4xl">
               Bring computational biology expertise to your project
             </h2>
-            <p className="max-w-xl text-ink-soft">{consulting.intro}</p>
+            <p className="max-w-xl text-neutral-600">{consulting.intro}</p>
             <div className="mt-6 flex flex-wrap gap-2">
               {consulting.topics.map((topic) => (
-                <Badge key={topic}>{topic}</Badge>
+                <Badge key={topic} className="border-accent/20 bg-accent/10 text-accent">
+                  {topic}
+                </Badge>
               ))}
             </div>
             <Link to="/contact" className="mt-8 inline-block">

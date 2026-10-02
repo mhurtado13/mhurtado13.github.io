@@ -6,17 +6,17 @@ import { media } from "@/data/content";
 
 export function MediaPage() {
   return (
-    <div className="mx-auto max-w-4xl px-6 py-20">
+    <div className="mx-auto max-w-5xl px-6 py-20">
       <SectionHeader eyebrow="Press" title="Media & Press" />
-      <div className="space-y-5">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         {media.map((item) => (
-          <Card key={item.title}>
+          <Card key={item.title} className="flex flex-col">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h4 className="font-semibold text-ink">{item.title}</h4>
-              <span className="text-sm font-medium text-accent">{item.year}</span>
+              <span className="shrink-0 text-sm font-medium text-accent">{item.year}</span>
             </div>
             <p className="text-sm font-medium italic text-ink-soft">{item.outlet}</p>
-            <p className="mt-2 text-sm text-ink-soft">{item.description}</p>
+            <p className="mt-2 flex-1 text-sm text-ink-soft">{item.description}</p>
             <div className="mt-3 flex items-center gap-3">
               <Badge>{item.type}</Badge>
               <a

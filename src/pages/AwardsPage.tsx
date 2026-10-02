@@ -5,9 +5,9 @@ import { awards } from "@/data/content";
 
 export function AwardsPage() {
   return (
-    <div className="mx-auto max-w-4xl px-6 py-20">
+    <div className="mx-auto max-w-5xl px-6 py-20">
       <SectionHeader eyebrow="Recognition" title="Awards & Achievements" />
-      <div className="space-y-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {awards.map((award) => (
           <Card key={award.title} className="flex items-start gap-4">
             <div className="mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand">
