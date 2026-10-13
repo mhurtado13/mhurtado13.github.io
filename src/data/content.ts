@@ -2,8 +2,7 @@ export const profile = {
   name: "Marcelo Hurtado",
   title: "PhD Student in Computational Biology and Bioinformatics",
   institution: "Cancer Research Center of Toulouse (CRCT)",
-  tagline:
-    "Advancing cancer systems biology through multiscale modeling and transcriptomics approaches to decode the tumor microenvironment.",
+  tagline: "A set of different computational tools I developed to decode the tumor microenvironment.",
   cvUrl: "/CV_Marcelo_Hurtado.pdf",
   social: {
     github: "https://github.com/mhurtado13",
@@ -19,24 +18,24 @@ export const profile = {
 
 export const researchFocus = [
   {
-    title: "Immunology",
+    title: "Mathematical Modeling",
     description:
-      "Immunotherapy response, survival analysis and cell type deconvolution.",
+      "Multiscale modeling, boolean models, perturbation systems and reinforcement learning.",
   },
   {
-    title: "Genomics",
+    title: "Transcriptomics",
     description:
-      "RNA-seq analysis including bulk and single-cell data, gene regulatory networks and inference of transcription factor activity.",
+      "RNA-seq analysis including bulk and single-cell data, gene regulatory networks, and inference of biological activities from omics data.",
   },
   {
     title: "Machine Learning",
     description:
-      "Supervised learning for classification and survival tasks, dimensionality reduction and predictive modeling.",
+      "Supervised and unsupervised learning for classification and survival tasks, dimensionality reduction approaches and predictive modeling using omics data.",
   },
   {
-    title: "Systems Biology",
+    title: "Clinical Data Integration",
     description:
-      "Network analysis, pathway modeling and multiscale simulations.",
+      "Harmonizing and integrating multi-cohort cancer patient data to extract biological insight and uncover clinically relevant patterns across patients.",
   },
 ];
 
@@ -121,7 +120,7 @@ export const skills = [
       "Bulk RNA-Seq",
       "Single-cell RNA-Seq",
       "Cell type deconvolution",
-      "Transcription factor activity",
+      "Gene regulatory networks",
       "Network analysis",
     ],
   },
@@ -134,6 +133,8 @@ export const skills = [
       "Model exploration",
       "Sensitivity analysis",
       "Genetic algorithms",
+      "Boolean modeling",
+      "Reinforcement Learning",
     ],
   },
   {
@@ -143,6 +144,8 @@ export const skills = [
       "Vector cloning",
       "Plasmid design",
       "Primer design",
+      "Benchling",
+      "SnapGene",
     ],
   },
   {
@@ -151,11 +154,11 @@ export const skills = [
   },
   {
     category: "Bioinformatics & Data Science",
-    items: ["Seurat", "Bioconductor", "Machine Learning", "dplyr", "tidymodels"],
+    items: ["Seurat", "Bioconductor", "caret", "scikit-learn", "dplyr", "tidymodels"],
   },
   {
-    category: "Laboratory & Design",
-    items: ["Benchling", "SnapGene", "Biomedical signals", "Bioprocesses"],
+    category: "Biomedical Engineering",
+    items: ["Biomedical Signal Processing", "Bioprocess Engineering", "Biofluidics"],
   },
 ];
 
