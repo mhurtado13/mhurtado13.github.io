@@ -33,7 +33,7 @@ export const researchFocus = [
       "Supervised and unsupervised learning for classification and survival tasks, dimensionality reduction approaches and predictive modeling using omics data.",
   },
   {
-    title: "Clinical Data Integration",
+    title: "Clinical data integration",
     description:
       "Harmonizing and integrating multi-cohort cancer patient data to extract biological insight and uncover clinically relevant patterns across patients.",
   },
@@ -52,7 +52,6 @@ export const consulting = {
   topics: [
     "RNA-seq analysis",
     "Machine learning",
-    "Transcriptomics analysis",
     "Multiscale modeling",
   ],
 };
@@ -120,21 +119,20 @@ export const skills = [
       "Bulk RNA-Seq",
       "Single-cell RNA-Seq",
       "Cell type deconvolution",
+      "Cell cell communication",
       "Gene regulatory networks",
-      "Network analysis",
+      "Network analysis"
     ],
   },
   {
     category: "Multiscale Modeling",
     items: [
       "Agent-based modeling",
-      "PhysiCell software",
       "HPC architecture",
-      "Model exploration",
       "Sensitivity analysis",
       "Genetic algorithms",
       "Boolean modeling",
-      "Reinforcement Learning",
+      "Reinforcement Learning"
     ],
   },
   {
@@ -143,9 +141,7 @@ export const skills = [
       "CRISPR-Cas9 gRNA design",
       "Vector cloning",
       "Plasmid design",
-      "Primer design",
-      "Benchling",
-      "SnapGene",
+      "Primer design"
     ],
   },
   {
